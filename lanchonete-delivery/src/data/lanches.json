@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "nome":"Hamburguer",
+        "nome": "Hamburguer",
         "ingredientes": [
             "Pão",
             "Carne",
@@ -13,8 +13,8 @@
     },
     {
         "id": 2,
-        "nome":"X-Burguer",
-        "ingredientes":[
+        "nome": "X-Burguer",
+        "ingredientes": [
             "Pão",
             "Carne",
             "Queijo",
@@ -22,12 +22,12 @@
             "Alface",
             "Tomate"
         ],
-        "preco": 18.00
+        "preco": 20.00
     },
     {
         "id": 3,
-        "nome":"X-Salada",
-        "ingredientes":[
+        "nome": "X-Salada",
+        "ingredientes": [
             "Pão",
             "Carne",
             "Queijo",
@@ -39,8 +39,8 @@
     },
     {
         "id": 4,
-        "nome":"X-Bacon",
-        "ingredientes":[
+        "nome": "X-Bacon",
+        "ingredientes": [
             "Pão",
             "Carne",
             "Queijo",
@@ -52,8 +52,8 @@
     },
     {
         "id": 5,
-        "nome":"X-Egg",
-        "ingredientes":[
+        "nome": "X-Egg",
+        "ingredientes": [
             "Pão",
             "Carne",
             "Queijo",
@@ -66,8 +66,8 @@
     },
     {
         "id": 6,
-        "nome":"X-Tudo",
-        "ingredientes":[
+        "nome": "X-Tudo",
+        "ingredientes": [
             "Pão",
             "Carne",
             "Queijo",

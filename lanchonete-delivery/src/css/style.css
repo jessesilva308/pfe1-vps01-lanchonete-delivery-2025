@@ -1,0 +1,131 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #F5F5F5;
+    margin: 0;
+    color: #333333;
+}
+header {
+    background: #FFCC00;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+header h1 {
+    margin: 0;
+}
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+input, select, button {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #CCCCCC;
+}
+button, .voltar-btn {
+    background: #FFCC00;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+button:hover, .voltar-btn:hover {
+    background: #FF0000;
+    color: #fff;
+}
+.pedido-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.order-card {
+    position: relative;
+    background: #F5F5F5;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: 220px;
+    flex: 1 1 220px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.finalizados-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-top: 2rem;
+}
+.finalizados-table th, .finalizados-table td {
+    border: 1px solid #CCCCCC;
+    padding: 0.75rem;
+    text-align: center;
+}
+.finalizados-table th {
+    background: #FFCC00;
+}
+@media (max-width: 700px) {
+    main {
+        padding: 1rem;
+    }
+    .pedido-list {
+        flex-direction: column;
+    }
+    .order-card {
+        min-width: 100%;
+    }
+    .finalizados-table, .finalizados-table thead, .finalizados-table tbody, .finalizados-table th, .finalizados-table td, .finalizados-table tr {
+        display: block;
+        width: 100%;
+    }
+    .finalizados-table tr {
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #FFCC00;
+    }
+    .finalizados-table td {
+        border: none;
+        border-bottom: 1px solid #CCCCCC;
+        position: relative;
+        padding-left: 50%;
+    }
+    .finalizados-table td:before {
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 0.5rem;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    .finalizados-table td:nth-of-type(1):before { content: "Cliente"; }
+    .finalizados-table td:nth-of-type(2):before { content: "Produto"; }
+    .finalizados-table td:nth-of-type(3):before { content: "Data"; }
+}
+.order-action {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+    color: #FFCC00;
+    transition: color 0.2s;
+}
+.order-action:hover {
+    color: #FF0000;
+}
